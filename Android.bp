@@ -5122,40 +5122,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "ftm_fm_lib",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/ftm_fm_lib.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libbase",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libbinder_ndk",
-                "libbinder",
-                "android.hardware.bluetooth.audio-V3-ndk",
-                "vendor.qti.hardware.fm-V1-ndk_vendor",
-                "vendor.qti.hardware.fm@1.0_vendor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "anc.hal",
     owner: "motorola",
     strip: {
@@ -5823,43 +5789,6 @@ cc_prebuilt_library_shared {
                 "libxml2",
                 "vendor.qti.hardware.capabilityconfigstore-V1-ndk",
                 "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm-impl",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.qti.hardware.fm-impl.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "libutils",
-                "liblog",
-                "libbase",
-                "libcutils",
-                "libhardware",
-                "libbinder_ndk",
-                "android.hardware.bluetooth@1.0-impl-qti",
-                "vendor.qti.hardware.fm-V1-ndk_vendor",
-                "libqmi_cci",
-                "libqmi",
-                "libqmiservices",
                 "libc++",
                 "libc",
                 "libm",
@@ -19420,31 +19349,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "motorola.hardware.fm-V1-ndk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/motorola.hardware.fm-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "motorola.hardware.health.aidl-V1-ndk",
     owner: "motorola",
     strip: {
@@ -22326,61 +22230,6 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm-V1-ndk_vendor",
-    stem: "vendor.qti.hardware.fm-V1-ndk",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.fm-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm@1.0_vendor",
-    stem: "vendor.qti.hardware.fm@1.0",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -27858,15 +27707,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "motorola.hardware.fm.service.xml",
-    owner: "motorola",
-    src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.fm.service.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "motorola.hardware.health.service.xml",
     owner: "motorola",
     src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.health.service.xml",
@@ -29142,38 +28982,6 @@ cc_prebuilt_binary {
                 "liblog",
                 "libbase",
                 "motorola.hardware.fdr-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "motorola.hardware.fm-service",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/motorola.hardware.fm-service",
-            ],
-            shared_libs: [
-                "libbase",
-                "libutils",
-                "libbinder",
-                "liblog",
-                "libbinder_ndk",
-                "libcutils",
-                "motorola.hardware.fm-V1-ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -32301,4 +32109,320 @@ filegroup {
         "proprietary/vendor/etc/qcril_database/upgrade/other/0014_version_update_modules.sql",
         "proprietary/vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql",
     ],
+}
+
+cc_prebuilt_library_shared {
+    name: "ftm_fm_lib",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/ftm_fm_lib.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "libbinder",
+                "android.hardware.bluetooth.audio-V3-ndk",
+                "vendor.qti.hardware.fm-V1-ndk_vendor",
+                "vendor.qti.hardware.fm@1.0_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm-impl",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.hardware.fm-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libbase",
+                "libcutils",
+                "libhardware",
+                "libbinder_ndk",
+                "android.hardware.bluetooth@1.0-impl-qti",
+                "vendor.qti.hardware.fm-V1-ndk_vendor",
+                "libqmi_cci",
+                "libqmi",
+                "libqmiservices",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "motorola.hardware.fm-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/motorola.hardware.fm-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm-V1-ndk_vendor",
+    stem: "vendor.qti.hardware.fm-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.fm-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm@1.0_vendor",
+    stem: "vendor.qti.hardware.fm@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "fm_helium",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/fm_helium.so",
+            ],
+            shared_libs: [
+                "libfm-hci",
+                "liblog",
+                "libnativehelper",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfm-hci",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libfm-hci.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libbase",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "libbinder",
+                "android.hardware.bluetooth.audio-V3-ndk",
+                "vendor.qti.hardware.fm-V1-ndk",
+                "vendor.qti.hardware.fm@1.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm-V1-ndk",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.fm-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.fm@1.0",
+    owner: "motorola",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "fm_hci.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/fm_hci.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "motorola.hardware.fm.service.xml",
+    owner: "motorola",
+    src: "proprietary/vendor/etc/vintf/manifest/motorola.hardware.fm.service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "motorola.hardware.fm-service",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/motorola.hardware.fm-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "libutils",
+                "libbinder",
+                "liblog",
+                "libbinder_ndk",
+                "libcutils",
+                "motorola.hardware.fm-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
 }
