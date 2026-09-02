@@ -3293,26 +3293,42 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mumba/proprietary/product/etc/CarrierSettings/s99999.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/s99999.pb
 
 PRODUCT_COPY_FILES += \
+    vendor/motorola/mumba/proprietary/product/etc/default-permissions/default-permissions-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-com.motorola.dolby.dolbyui.xml \
+    vendor/motorola/mumba/proprietary/product/etc/motorola/bgintents/com.motorola.dynamicvolume.bgintents.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/motorola/bgintents/com.motorola.dynamicvolume.bgintents.xml \
     vendor/motorola/mumba/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/motorola/mumba/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/motorola/mumba/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/motorola/mumba/proprietary/product/etc/permissions/privapp-permissions-com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.google.android.euicc.xml \
+    vendor/motorola/mumba/proprietary/product/etc/permissions/privapp-permissions-com.motorola.dynamicvolume.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-com.motorola.dynamicvolume.xml \
     vendor/motorola/mumba/proprietary/product/etc/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+    vendor/motorola/mumba/proprietary/product/etc/sysconfig/hiddenapi-whitelist-com.motorola.dynamicvolume.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hiddenapi-whitelist-com.motorola.dynamicvolume.xml \
     vendor/motorola/mumba/proprietary/product/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/hotword-hiddenapi-package-whitelist.xml \
     vendor/motorola/mumba/proprietary/recovery/root/vendor/firmware/ILITEK_FW_TXD:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/ILITEK_FW_TXD \
     vendor/motorola/mumba/proprietary/recovery/root/vendor/firmware/boe_chipone_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/boe_chipone_firmware.bin \
     vendor/motorola/mumba/proprietary/recovery/root/vendor/firmware/csot_chipone_firmware.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/csot_chipone_firmware.bin \
+    vendor/motorola/mumba/proprietary/system/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.dolby.dolbyui.dax3.features.xml \
+    vendor/motorola/mumba/proprietary/system/etc/permissions/com.motorola.frameworks.core.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.frameworks.core.addon.xml \
+    vendor/motorola/mumba/proprietary/system/etc/permissions/com.motorola.motosignature.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.motorola.motosignature.xml \
+    vendor/motorola/mumba/proprietary/system/etc/permissions/moto-checkin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-checkin.xml \
+    vendor/motorola/mumba/proprietary/system/etc/permissions/moto-core_services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-core_services.xml \
+    vendor/motorola/mumba/proprietary/system/etc/permissions/moto-settings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/moto-settings.xml \
+    vendor/motorola/mumba/proprietary/system/etc/permissions/motoaudioeffectsdk.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/motoaudioeffectsdk.xml \
+    vendor/motorola/mumba/proprietary/system/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml \
     vendor/motorola/mumba/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/motorola/mumba/proprietary/system_ext/etc/enable-disable-packages/enable-disable-com.motorola.sstservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/enable-disable-packages/enable-disable-com.motorola.sstservice.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/motorola/mumba/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
     vendor/motorola/mumba/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
     vendor/motorola/mumba/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/motorola/mumba/proprietary/system_ext/etc/permissions/com.dolby.daxservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.dolby.daxservice.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/motorola/mumba/proprietary/system_ext/etc/permissions/feature-com.motorola.sstservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/feature-com.motorola.sstservice.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/moto-telephony.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/moto-telephony.xml \
+    vendor/motorola/mumba/proprietary/system_ext/etc/permissions/privapp-permissions-com.motorola.sstservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.motorola.sstservice.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/motorola/mumba/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
@@ -3360,6 +3376,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mumba/proprietary/vendor/etc/bstconfig/hdrcfg.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/bstconfig/hdrcfg.cfg \
     vendor/motorola/mumba/proprietary/vendor/etc/camera/arcsoft_calibration_u_dc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arcsoft_calibration_u_dc.bin \
     vendor/motorola/mumba/proprietary/vendor/etc/camera/mot_engine_config.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mot_engine_config.bin \
+    vendor/motorola/mumba/proprietary/vendor/etc/camera/vidhance.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance.lic \
     vendor/motorola/mumba/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/motorola/mumba/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/motorola/mumba/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
@@ -3423,10 +3440,15 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mumba/proprietary/vendor/etc/display/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
     vendor/motorola/mumba/proprietary/vendor/etc/display/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json \
     vendor/motorola/mumba/proprietary/vendor/etc/displayconfig/display_id_4630946916234099603.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946916234099603.xml \
+    vendor/motorola/mumba/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+    vendor/motorola/mumba/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/motorola/mumba/proprietary/vendor/etc/dolby/dax-default_retin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default_retin.xml \
+    vendor/motorola/mumba/proprietary/vendor/etc/dolby/dax-moto_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_1.xml \
+    vendor/motorola/mumba/proprietary/vendor/etc/dolby/dax-moto_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_2.xml \
+    vendor/motorola/mumba/proprietary/vendor/etc/dolby/dax-moto_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-moto_3.xml \
     vendor/motorola/mumba/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/gnss_antenna_info.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gnss_antenna_info.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
-    vendor/motorola/mumba/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
     vendor/motorola/mumba/proprietary/vendor/etc/init/android.hardware.biometrics.face-service.face.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.face-service.face.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint-service-jv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint-service-jv.rc \
@@ -3443,6 +3465,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mumba/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/motorola/mumba/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/fingerprint-fpc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fingerprint-fpc.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/hw/init.mmi.charge_only.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.charge_only.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/hw/init.mmi.services.override.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mmi.services.override.rc \
@@ -3486,6 +3509,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mumba/proprietary/vendor/etc/init/snapdragon_services.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/snapdragon_services.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/tlpd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tlpd.rc \
+    vendor/motorola/mumba/proprietary/vendor/etc/init/vendor.dolby.media.c2-default-service-dax.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.media.c2-default-service-dax.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/vendor.mmi.carrier.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mmi.carrier.rc \
     vendor/motorola/mumba/proprietary/vendor/etc/init/vendor.qsap.location.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qsap.location.rc \
@@ -3558,6 +3582,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mumba/proprietary/vendor/etc/libse-gto-hal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libse-gto-hal.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/motorola/mumba/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/motorola/mumba/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     vendor/motorola/mumba/proprietary/vendor/etc/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
     vendor/motorola/mumba/proprietary/vendor/etc/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
@@ -3710,14 +3735,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mumba/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/usecaseKvManager.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usecaseKvManager.xml \
     vendor/motorola/mumba/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
-    vendor/motorola/mumba/proprietary/vendor/etc/camera/vidhance.lic:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance.lic \
     vendor/motorola/mumba/proprietary/vendor/etc/wfd.hdcp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wfd.hdcp.bin \
     vendor/motorola/mumba/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/motorola/mumba/proprietary/vendor/etc/wifi/adrastea/WCNSS_mot_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/adrastea/WCNSS_mot_cfg.ini \
-    vendor/motorola/mumba/proprietary/vendor/etc/wifi/adrastea/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/adrastea/WCNSS_qcom_cfg.ini \
-    vendor/motorola/mumba/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/wifi/vendor_cmd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_cmd.xml \
-    vendor/motorola/mumba/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/motorola/mumba/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
     vendor/motorola/mumba/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/motorola/mumba/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
@@ -4153,17 +4174,25 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libcodec2_soft_ac4dec \
+    libcodec2_soft_ddpdec \
+    libcodec2_store_dolby \
     libcolor-default \
     libcom.qti.chinodeutils \
     libconfigdb \
     libcpion \
+    libdapparamstorage \
     libdataitems \
+    libdeccfg \
     libdiag \
     libdiagjni \
     libdigital-dimming \
     libdisp-aba \
     libdisplayqos \
     libdisplayskuutils \
+    libdlbdsservice \
+    libdlbpreg \
+    libdmshal \
     libdpps \
     libdrmfs \
     libdrmtime \
@@ -4276,6 +4305,7 @@ PRODUCT_PACKAGES += \
     libnicm_recovery \
     libnicm_utils \
     libnicm_vh \
+    liboem_specific \
     liboemcrypto \
     libopencv \
     libopencv3a \
@@ -4288,6 +4318,7 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libportrait_repair_ppl3_ocl \
+    libq-perflog \
     libqc2audio_base \
     libqc2audio_basecodec \
     libqc2audio_core \
@@ -4407,6 +4438,7 @@ PRODUCT_PACKAGES += \
     libsoc_helper \
     libsoc_helper_jni \
     libsotertool \
+    libspatializerparamstorage \
     libspcom \
     libspl \
     libspukeymintdeviceutils \
@@ -4522,6 +4554,10 @@ PRODUCT_PACKAGES += \
     libsw2dlut_dsp_skel \
     sensors.moto \
     sensors.ssc \
+    libdlbvolaidl \
+    libswdapaidl \
+    libswgamedapaidl \
+    libswspatializeraidl \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -4529,6 +4565,8 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -4744,6 +4782,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.qccsyshal_aidl-halimpl \
     vendor.qti.qccvndhal_aidl-V1-ndk \
     com.google.android.widevine-12498615 \
+    MotoDolbyDax3 \
+    MotoSignature2App \
+    MotoSignatureApp \
     CACertService \
     CneApp \
     IWlanService \
@@ -4753,15 +4794,25 @@ PRODUCT_PACKAGES += \
     EuiccGoogle \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
+    MotoMultiVolume \
     ImsRcsService \
     QCC \
     QtiTelephonyService \
+    MotoSstSoundService \
+    MotorolaSettingsProvider \
     QtiTelephony \
     WfdService \
+    daxService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     WfdCommon \
+    com.motorola.frameworks.core.addon \
+    com.motorola.motosignature \
+    moto-checkin \
+    moto-core_services \
+    moto-settings \
+    motoaudioeffectsdk \
     com.fingerprints.extension \
     uimgbalibrary \
     uimgbamanagerlibrary \
@@ -4812,6 +4863,7 @@ PRODUCT_PACKAGES += \
     dataconnection-saidl.xml \
     datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
+    dms-service.xml \
     dpm-saidl.xml \
     face-default_4.xml \
     imsdcservice-saidl.xml \
@@ -4832,6 +4884,7 @@ PRODUCT_PACKAGES += \
     qtiradio-saidl.xml \
     snapdragon_services.xml \
     vendor-qti-hardware-sensorscalibrate.xml \
+    vendor.dolby.media.c2-default-service-dax.xml \
     vendor.motorola.hardware.sxf.service.xml \
     vendor.qti.MemHal.xml \
     vendor.qti.camera.provider.xml \
@@ -4897,6 +4950,8 @@ PRODUCT_PACKAGES += \
     motorola.hardware.rpmb-service \
     motosxf \
     qcrilNrd \
+    vendor.dolby.dms.service \
+    vendor.dolby.media.c2-default-service-dax \
     vendor.qti.MemHal-service \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.alarm-service \
